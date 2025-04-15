@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <p id="result"></p>
+</head>
+<body>
+
+    <script>
+        const thisset = new Set(['apple','banana','cherry']);
+
+        const exists = thisset.has('banana');
+
+        document.getElementById('result').textContent = exists;
+    </script>
+    
+</body>
+</html>
