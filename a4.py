@@ -1,7 +1,6 @@
-thisdict = {
-    "brand":"ford",
-    "model":"mustang",
-    "year":1964
-}
+import re
 
-print(thisdict)
+
+txt = "The rain in Spain"
+x = re.split("\s",txt)
+print(x)

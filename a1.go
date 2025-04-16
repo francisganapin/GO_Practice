@@ -1,15 +1,20 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+	"regexp"
+)
 
-func main(){
-	fruits := map[string]int{
-		"apple":500,
-		"bananas":300,
-		"orange":200,
+func main() {
+	txt := "The rain in Spain"
+	pattern := "^The.*Spain$"
+
+	matched, _ := regexp.MatchString(pattern, txt)
+
+	if matched {
+		fmt.Println("Yes we have a match")
+	} else {
+		fmt.Println("No match")
 	}
 
-	numb := fruits["apple"]
-
-	fmt.Printf("There are %d apple .\n",numb)
 }

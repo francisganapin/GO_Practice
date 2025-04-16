@@ -1,12 +1,9 @@
-def fruits():
-    new = {
-        'apple':500,
-        'bananas':300,
-        'oranges':200
-    }
-    return new
+import re
 
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
 
-fruit_data = fruits()
-numb = fruit_data['apple']
-print(numb)
+if x:
+    print("yes we have a match")
+else:
+    print('No match')
